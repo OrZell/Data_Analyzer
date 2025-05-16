@@ -128,7 +128,7 @@ namespace DataAnalyzer
             return affiliations;
         }
 
-        public static string mostWeapon(List<string> weapons, bool sign)
+        public static List<string> mostWeapon(List<string> weapons, bool sign)
         {
             Dictionary<string, int> countWepons = new Dictionary<string, int>();
             foreach (string weapon in weapons)
@@ -142,19 +142,28 @@ namespace DataAnalyzer
                     countWepons[weapon] = 1;
                 }
             }
-            string leastWeapon="", commonWeapon="";
+
+            List<string> leastWeapon=new List<string>(), commonWeapon=new List<string>();
             int least = countWepons.Count, common = 0;
             foreach (System.Collections.Generic.KeyValuePair<string, int> weapon in countWepons)
             {
+                if (weapon.Value == common)
+                {
+                    commonWeapon.Add(weapon.Key);
+                }
                 if (weapon.Value > common)
                 {
                     common = weapon.Value;
-                    commonWeapon = weapon.Key;
+                    commonWeapon.Clear(); commonWeapon.Add(weapon.Key);
+                }
+                if (weapon.Value == least)
+                {
+                    leastWeapon.Add(weapon.Key);
                 }
                 if (weapon.Value < least)
                 {
                     least = weapon.Value;
-                    leastWeapon = weapon.Key;
+                    leastWeapon.Clear(); leastWeapon.Add(weapon.Key);
                 }
             }
             if (sign)
@@ -166,7 +175,7 @@ namespace DataAnalyzer
                 return leastWeapon;
             }
         }
-        public static string mostAffiliation(List<string> affiliations, bool sign)
+        public static List<string> mostAffiliation(List<string> affiliations, bool sign)
         {
             Dictionary<string, int> countAffiliations = new Dictionary<string, int>();
             foreach (string affiliation in affiliations)
@@ -180,19 +189,27 @@ namespace DataAnalyzer
                     countAffiliations[affiliation] = 1;
                 }
             }
-            string commonAffiliation = "", leapAffiliation = "";
+            List<string> commonAffiliation = new List<string>(), leapAffiliation = new List<string>();
             int common = 0, leap = countAffiliations.Count;
             foreach (System.Collections.Generic.KeyValuePair<string, int> affiliation in countAffiliations)
             {
+                if (affiliation.Value == common)
+                {
+                    commonAffiliation.Add(affiliation.Key);
+                }
                 if (affiliation.Value > common)
                 {
                     common = affiliation.Value;
-                    commonAffiliation = affiliation.Key;
+                    commonAffiliation.Clear(); commonAffiliation.Add(affiliation.Key);
+                }
+                if (affiliation.Value == leap)
+                {
+                    leapAffiliation.Add(affiliation.Key);
                 }
                 if (affiliation.Value < leap)
                 {
                     leap = affiliation.Value;
-                    leapAffiliation = affiliation.Key;
+                    leapAffiliation.Clear();  leapAffiliation.Add(affiliation.Key);
                 }
             }
             if (sign)
@@ -204,21 +221,34 @@ namespace DataAnalyzer
                 return leapAffiliation;
             }
         }
+        public static string listStringToString(List<string> listString)
+        {
+            string result = "";
+            for (int i = 0; i < listString.Count; i++)
+            {
+                result += listString.ElementAt(i);
+                if (i < listString.Count - 1)
+                {
+                    result += "\n";
+                }
+            }
+            return result;
+        }
         public static string commonWeapon(List<Terrorist> Data)
         {
-            return Functions.mostWeapon(Functions.listWeapon(Data), true);
+            return Functions.listStringToString(Functions.mostWeapon(Functions.listWeapon(Data), true));
         }
         public static string leastWeapon(List<Terrorist> Data)
         {
-            return Functions.mostWeapon(Functions.listWeapon(Data), false);
+            return Functions.listStringToString(Functions.mostWeapon(Functions.listWeapon(Data), false));
         }
         public static string commonAffiliation(List<Terrorist> Data)
         {
-            return Functions.mostAffiliation(Functions.listAffiliations(Data), true);
+            return Functions.listStringToString(Functions.mostAffiliation(Functions.listAffiliations(Data), true));
         }
         public static string leastAffiliation(List<Terrorist> Data)
         {
-            return Functions.mostAffiliation(Functions.listAffiliations(Data), false);
+            return Functions.listStringToString(Functions.mostAffiliation(Functions.listAffiliations(Data), false));
         }
         public static Dictionary<string, Dictionary<char, int>> dictOfNamesAndGPS(List<Terrorist> Data)
         {
@@ -255,7 +285,7 @@ namespace DataAnalyzer
         public static string checkTheTinyDis(Dictionary<List<string>, double> namesAndDisBetweenThem)
         {
             double distance = namesAndDisBetweenThem.ElementAt(0).Value;
-            List<string> names = new List<string>();
+            List<string> names = namesAndDisBetweenThem.ElementAt(0).Key;
             foreach (System.Collections.Generic.KeyValuePair<System.Collections.Generic.List<string>, double> namesAndDis in namesAndDisBetweenThem)
             {
                 if (namesAndDis.Value < distance)

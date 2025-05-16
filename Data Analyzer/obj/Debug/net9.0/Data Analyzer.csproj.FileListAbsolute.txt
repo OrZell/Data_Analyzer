@@ -15,3 +15,4 @@ C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\obj\Debug\net9.0\ref\Dat
 C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\obj\Debug\net9.0\Data Analyzer.csproj.AssemblyReference.cache
 C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\obj\Debug\net9.0\Data Ana.99A8FC90.Up2Date
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\obj\Debug\net9.0\Data Analyzer.sourcelink.json
