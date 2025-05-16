@@ -1,0 +1,17 @@
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\bin\Debug\net9.0\Data Analyzer.exe
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\bin\Debug\net9.0\Data Analyzer.deps.json
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\bin\Debug\net9.0\Data Analyzer.runtimeconfig.json
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\bin\Debug\net9.0\Data Analyzer.dll
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\bin\Debug\net9.0\Data Analyzer.pdb
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\obj\Debug\net9.0\Data Analyzer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\obj\Debug\net9.0\Data Analyzer.AssemblyInfoInputs.cache
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\obj\Debug\net9.0\Data Analyzer.AssemblyInfo.cs
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\obj\Debug\net9.0\Data Analyzer.csproj.CoreCompileInputs.cache
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\obj\Debug\net9.0\Data Analyzer.dll
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\obj\Debug\net9.0\refint\Data Analyzer.dll
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\obj\Debug\net9.0\Data Analyzer.pdb
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\obj\Debug\net9.0\Data Analyzer.genruntimeconfig.cache
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\obj\Debug\net9.0\ref\Data Analyzer.dll
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\obj\Debug\net9.0\Data Analyzer.csproj.AssemblyReference.cache
+C:\Users\orzel\source\repos\Data Analyzer\Data Analyzer\obj\Debug\net9.0\Data Ana.99A8FC90.Up2Date

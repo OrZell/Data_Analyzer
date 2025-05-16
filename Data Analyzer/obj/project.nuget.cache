@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kI3EdjWRfUw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\orzel\\source\\repos\\Data Analyzer\\Data Analyzer\\Data Analyzer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\orzel\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
